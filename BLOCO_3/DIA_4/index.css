@@ -6,6 +6,7 @@
 body {
     font-family: sans-serif;
     background-color: rgb(156, 70, 0);
+    min-width: 526px;
 }
 
 header div.main-title {
@@ -70,7 +71,11 @@ header div.main-title {
     width: 70%;
     margin: 0 0 0 0;
     padding: 1rem;
-    text-align: justify;
+    display: inline-block;
+    min-width: 439px;
+    justify-content: content;
+    align-items: center;
+    border-left: 8px solid rgb(156, 70, 0) ;
 }
 
 .section-1 h3 {
@@ -104,4 +109,51 @@ th, td {
     background-color: rgb(126, 126, 126);
     display: inline-block;
     width: 100%;
+}
+
+.section-2 p {
+    width: 60%;
+    display: inline-block;
+}
+
+.section-2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img-1, .img-2, .img-3{
+    width: 7rem;
+    height: 7rem;
+    margin: 2rem;
+    display: inline-block;
+}
+
+/* ASIDE */
+
+aside {
+    display: inline-block;
+    background-color: rgb(184, 184, 184);
+    width: 25%;
+    min-width: 276.5px;
+    margin-left: 1rem;
+    height: 20rem;
+    border: 2px solid rgb(156, 70, 0);
+}
+
+.main-content-plus {
+    display: inline-block;
+}
+
+.img-stomatopoda {
+    position: relative;
+    width: 15rem;
+    min-width: 240px;
+    height:10rem;
+    margin: 2rem;
+}
+
+.help-aside {
+    display: block;
 }
