@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header div.main-title {
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Sansita Swashed', sans-serif;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+}
+
+.main-header ul {
+    text-align: center;
+}
+
+.main-header ul li button {
+    padding: 1rem;
+    background-color: black;
+    border: 3px solid;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.main-header ul li button:hover {
+    background-color: rgb(39, 39, 39);
+    transition: .5s;
+}
+
+.main-header ul li{
+    display: inline-block;
+    margin: 2rem;
+    position: relative;
+}
+
+.navigation ul a:link, .navigation ul a:visited, .navigation ul a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    background-color: rgb(126, 126, 126);
+    margin: 0 0 1rem 0;
+    padding: 2rem;
+}
+
+.main-content article header h2, .main-content article .section-2 h3 {
+    margin-left: 2rem;
+}
+
+.section-1 {
+    background-color: rgb(184, 184, 184);
+    width: 70%;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem;
+}
