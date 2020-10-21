@@ -76,9 +76,15 @@ table {
     padding: .5rem 1rem 1rem 1rem;
 }
 
-aside {
+.article-image {
     display: inline-block;
-    width: 5%;
+    width: 200px;
+    margin: 2rem;
+}
+
+aside{
+    display: inline-block;
+    width: auto;
     position: absolute;
     margin: 3rem 0 0 0;
     
@@ -86,4 +92,27 @@ aside {
 
 aside div{
     margin: .5rem;
+}
+
+aside span {
+    display: block;
+    width: 90%;
+}
+
+.aside {
+    margin-bottom: 2rem;
+}
+
+.aside li a {
+    text-decoration: none;
+}
+
+article .aside {
+    
+}
+
+footer {
+    background-color: aquamarine;
+    padding: 3rem;
+    font-size: 2rem;
 }
