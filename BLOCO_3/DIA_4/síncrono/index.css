@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+}
+
+.main-header {
+    background-color: black;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    padding: 5rem 0 5rem 0;
+    font-size: 4em;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.nav-itens li {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.nav-itens li a {
+    transition: background-color, padding .3s;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    padding: 1rem;
+}
+
+
+/* Content */
+
+.main-content {
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 2rem;
+    display: inline-block;
+    width: 60%;
+    margin: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.main-content h2, .main-content article h3 {
+    margin: 0 0 1rem 0;
+}
+
+table th, table td {
+    border: 1px solid black;
+}
+
+table {
+    margin: 2rem;
+}
+
+.main-content article {
+    background-color: white;
+}
+
+.article01 {
+    padding: 1rem 1rem .5rem 1rem;
+}
+
+.article02 {
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+aside {
+    display: inline-block;
+    width: 5%;
+    position: absolute;
+    margin: 3rem 0 0 0;
+    
+}
+
+aside div{
+    margin: .5rem;
+}
