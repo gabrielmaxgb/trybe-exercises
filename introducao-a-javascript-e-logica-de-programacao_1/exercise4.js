@@ -10,6 +10,6 @@ if(num >= 0) {
 
 } else {
 
-    console.log(0);
+    console.log('zero');
 
 }

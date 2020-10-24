@@ -1,4 +1,4 @@
-let peca = 'Rei';
+let peca = 'rEi';
 
 switch(peca.toLowerCase()){
     case 'peão':
