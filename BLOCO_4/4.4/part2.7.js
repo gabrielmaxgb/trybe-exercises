@@ -5,9 +5,6 @@
 let word = 'gabriel';
 let ending = 'abriel';
 
-
-let newArray = [];
-
 function isEnding(word, ending) {
 
     let endingLength = ending.length;
