@@ -1,3 +1,11 @@
 let a = 2, b =3;
-let sub = a - b;
-console.log(sub); 
+
+
+function sub(a, b){
+
+    let sub = a - b;
+    return console.log(sub);
+
+}
+
+sub(a, b);
