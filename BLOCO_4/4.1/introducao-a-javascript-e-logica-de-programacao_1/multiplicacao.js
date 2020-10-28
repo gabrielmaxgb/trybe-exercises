@@ -1,3 +1,9 @@
 let a = 2, b =3;
-let tim = a * b;
-console.log(tim); 
+
+
+function mult(a, b) {
+    let tim = a * b;
+    console.log(tim);
+}
+
+mult(a, b);
