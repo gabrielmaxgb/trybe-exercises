@@ -54,7 +54,5 @@ if(info.recorrente == info2.recorrente){
     recorrencia = 'Não recorrentes';
 }
 
-console.log(
-    `${info.personagem} e ${info2.personagem}\n${info.origem} e ${info2.origem}\n${info.nota} e ${info2.nota}\n${recorrencia}`
-);
+console.log(`${info.personagem} e ${info2.personagem}\n${info.origem} e ${info2.origem}\n${info.nota} e ${info2.nota}\n${recorrencia}`);
 
