@@ -1,3 +1,10 @@
 let a = 2, b =3;
-let sum = a % b;
-console.log(sum); 
+
+function mod(a, b){
+
+    let rest = a % b;
+    console.log(rest);
+
+}
+
+mod(a, b);

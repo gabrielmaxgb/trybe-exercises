@@ -1,13 +1,20 @@
 let a = 6, b = 6;
 
-if(a > b){
+function maiorMenorIgual(a, b){
 
-    console.log(a);
+    if(a > b){
 
-} else if (a < b){
+        console.log(a);
+    
+    } else if (a < b){
+    
+        console.log(b);
+    
+    } else {
+        console.log('Os dois números são iguais');
+    }
 
-    console.log(b);
 
-} else {
-    console.log('Os dois números são iguais');
 }
+
+maiorMenorIgual(a,b);

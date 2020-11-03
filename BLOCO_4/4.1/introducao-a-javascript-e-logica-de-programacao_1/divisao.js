@@ -1,3 +1,8 @@
 let a = 2, b =3;
-let div = a / b;
-console.log(div); 
+
+function div(a, b) {
+    let div = a / b;
+    console.log(div);
+}
+
+div(a, b);
