@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice</title>
+    </head>
+    <body>
+        <div id="paiDoPai">
+            <div id="pai">
+                <div id="primeiroFilho"></div>
+                <div id="elementoOndeVoceEsta">
+                    <div id="primeiroFilhoDoFilho"></div>
+                    <div id="segundoEUltimoFilhoDoFilho"></div>
+                </div>
+                Atenção!
+                <div id="terceiroFilho"></div>
+                <div id="quartoEUltimoFilho"></div>
+            </div>
+        </div>
+        <script>
+            /* Part2 */
+            /* 1 */
+            let pai = document.getElementById('pai');
+            let elementoOndeVoceEstaBrother = document.createElement('div');
+            elementoOndeVoceEstaBrother.innerText = 'Oi, sou o irmão do elementoOndeVoceEsta';
+            pai.appendChild(elementoOndeVoceEstaBrother);
+            /* 2 */
+            let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+            let elementoOndeVoceEstaChild = document.createElement('div');
+            elementoOndeVoceEstaChild.innerText = 'Oi, sou o filho do elementoOndeVoceEsta';
+            elementoOndeVoceEsta.appendChild(elementoOndeVoceEstaChild);
+            /* 3 */
+            let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+            let primeiroFilhoDoFilhoChild = document.createElement('div');
+            primeiroFilhoDoFilhoChild.innerText = 'Olá, mundo';
+            primeiroFilhoDoFilho.appendChild(primeiroFilhoDoFilhoChild);
+            /* 4 */
+
+
+            /* Part1 */
+            /* 1 */
+            document.getElementById('elementoOndeVoceEsta');
+            /* 2 */
+            document.getElementById('elementoOndeVoceEsta').parentNode.style.backgroundColor = 'green';
+            /* 3 */
+            document.getElementById('primeiroFilhoDoFilho').innerText = 'Aprender na trybe é muito legal';
+            /* 4 */
+            document.getElementById('pai').firstChild;
+            /* 5 */
+            document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+            /* 6 */
+            document.getElementById('elementoOndeVoceEsta').nextSibling;
+            /* 7 */
+            document.getElementById('elementoOndeVoceEsta').nextSibling.nextSibling;
+            /* 8 */
+            document.getElementById('pai').childNodes[5];
+        </script>
+    </body>
+</html>
