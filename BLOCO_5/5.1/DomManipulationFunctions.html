@@ -80,7 +80,8 @@
 
             /* 5 */
         function ex5(){
-            document.getElementsByTagName('p')[0].innerHTML.toUpperCase();
+            let up = document.getElementsByTagName('p')[0].innerText.toUpperCase();
+            document.getElementsByTagName('p')[0].innerText = up;
         }
         ex5();
 
