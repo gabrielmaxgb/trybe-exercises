@@ -75,10 +75,31 @@ changeBgColor();
 function createsFridayButton(string) {
     let buttonsContainer = document.querySelector('.buttons-container');
     let newButton = document.createElement('button');
-    let newButtonID = newButton.id;
+    let newButtonID = 'btn-friday';
 
-    newButtonID = 'btn-friday';
+    newButton.id = newButtonID;
     newButton.innerHTML = string;
     buttonsContainer.appendChild(newButton);
 }
 createsFridayButton('Sexta-feira');
+
+/* Exercício 5 */
+function changeFridayText() {
+
+    let fridayButton = document.getElementById('btn-friday');
+    let fridays = document.querySelectorAll('.friday');
+
+    fridayButton.addEventListener('click', function () {
+
+
+        for (let index = 0; index < fridays.length; index += 1) {
+
+            if (fridays[index].innerText != 'Sexta-feira') {
+                fridays[index].innerText = 'Sexta-feira';
+            } else {
+                fridays[index].innerText = dezDaysList[index];
+            }
+        }
+    })
+}
+changeFridayText();
