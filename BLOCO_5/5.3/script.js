@@ -41,3 +41,18 @@ function createMonthDays() {
 };
 
 createMonthDays();
+
+/* Exercício 2 */
+
+
+function createsButton(string) {
+    let getButtonContainer = document.querySelector('.buttons-container');
+    let newButton = document.createElement('button');
+    let newButtonId = 'btn-holiday';
+    newButton.id = newButtonId;
+    newButton.innerHTML = string;
+    getButtonContainer.appendChild(newButton);
+
+}
+
+createsButton('Feriados');
