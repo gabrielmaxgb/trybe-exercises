@@ -103,3 +103,23 @@ function changeFridayText() {
     })
 }
 changeFridayText();
+
+/* Exercício 6 */
+function mouseOver() {
+    let day = document.getElementById('days');
+
+    day.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '40px';
+      event.target.style.fontWeight = 'bold';
+    })
+  };
+function mouseOut() {
+    let day = document.getElementById('days');
+
+    day.addEventListener('mouseout', function(event) {
+      event.target.style.fontWeight = '200';
+      event.target.style.fontSize = '20px';
+    })
+  };
+mouseOver();
+mouseOut();
