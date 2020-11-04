@@ -123,3 +123,12 @@ function mouseOut() {
   };
 mouseOver();
 mouseOut();
+
+/* Exercício 7 */
+function addTask(string) {
+    let myTasks = document.querySelector('.my-tasks');
+    let tarefa = document.createElement('span');
+    tarefa.innerHTML = string;
+    myTasks.appendChild(tarefa);
+}
+addTask('cozinhar');
