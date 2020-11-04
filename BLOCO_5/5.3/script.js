@@ -40,7 +40,7 @@ function createMonthDays() {
 createMonthDays();
 
 /* Exercício 2 */
-function createsButton(string) {
+function createsHolidayButton(string) {
     let getButtonContainer = document.querySelector('.buttons-container');
     let newButton = document.createElement('button');
     let newButtonId = 'btn-holiday';
@@ -49,7 +49,7 @@ function createsButton(string) {
     newButton.innerHTML = string;
     getButtonContainer.appendChild(newButton);
 }
-createsButton('Feriados');
+createsHolidayButton('Feriados');
 
 /* Exercício 3 */
 function changeBgColor() {
@@ -70,3 +70,16 @@ function changeBgColor() {
     });
 }
 changeBgColor();
+
+/* Exercício 4 */
+
+function createsFridayButton(string) {
+    let buttonsContainer = document.querySelector('.buttons-container');
+    let newButton = document.createElement('button');
+    let newButtonID = newButton.id;
+
+    newButtonID = 'btn-friday';
+    newButton.innerHTML = string;
+    buttonsContainer.appendChild(newButton);
+}
+createsFridayButton('Sexta-feira');
