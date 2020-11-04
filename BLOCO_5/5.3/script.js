@@ -72,7 +72,6 @@ function changeBgColor() {
 changeBgColor();
 
 /* Exercício 4 */
-
 function createsFridayButton(string) {
     let buttonsContainer = document.querySelector('.buttons-container');
     let newButton = document.createElement('button');
