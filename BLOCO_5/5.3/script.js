@@ -144,3 +144,72 @@ function addsSubtitle(color) {
     myTasks.appendChild(subtitle);
 }
 addsSubtitle('green');
+
+/* Exercício 9  */
+function addEvent() {
+
+    let currentTask = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+
+    myTasks.addEventListener('click', function (event) {
+
+        if (currentTask.length === 0) {
+            event.target.className = 'task selected';
+          } else {
+            event.target.className = 'task';
+          }
+    });
+
+}
+addEvent();
+
+/* Exercício 10 */           //https://app.betrybe.com/course/fundamentals/javascript/dom-manipulation/js-part-7-solutions
+function colorDay() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let day = document.getElementById('days');
+    let taskDiv = document.querySelector('.task');
+    let taskColor = taskDiv.style.backgroundColor;
+
+    day.addEventListener('click', function(event){
+      let eventTargetColor = event.target.style.color;
+      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor;
+        event.target.style.color = color;
+      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    });
+  };
+
+  colorDay();
+
+  /* Bônus */            //https://app.betrybe.com/course/fundamentals/javascript/dom-manipulation/js-part-7-solutions
+  function addNewTask() {
+    let getInputField = document.querySelector('#task-input');
+    let addInputButton = document.querySelector('#btn-add');
+    let getTaskList = document.querySelector('.task-list');
+  
+    addInputButton.addEventListener('click', function() {
+      if (getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+  
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      } else {
+        alert('Error: Digite ao menos 1 caractere.');
+      }
+    })
+  
+    getInputField.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13 && getInputField.value.length > 0) {
+        let newLi = document.createElement('li');
+        newLi.innerText = getInputField.value;
+  
+        getTaskList.appendChild(newLi);
+        getInputField.value = '';
+      }
+    });
+  };
+  
+  addNewTask();
