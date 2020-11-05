@@ -135,6 +135,12 @@ function addTask(task) {
 addTask('cozinhar');
 
 /* Exercício 8 */
-function addsSubtitle(cor) {
+function addsSubtitle(color) {
+    let myTasks = document.querySelector('.my-tasks');
+    let subtitle = document.createElement('div');
 
+    subtitle.className = 'task';
+    subtitle.style.backgroundColor = color;
+    myTasks.appendChild(subtitle);
 }
+addsSubtitle('green');
