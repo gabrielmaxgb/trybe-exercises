@@ -72,19 +72,19 @@ function changeBgColor() {
 changeBgColor();
 
 /* Exercício 4 */
-function createsFridayButton(string) {
+function createsFridayButton(friday) {
     let buttonsContainer = document.querySelector('.buttons-container');
     let newButton = document.createElement('button');
     let newButtonID = 'btn-friday';
 
     newButton.id = newButtonID;
-    newButton.innerHTML = string;
+    newButton.innerHTML = friday;
     buttonsContainer.appendChild(newButton);
 }
 createsFridayButton('Sexta-feira');
 
 /* Exercício 5 */
-function changeFridayText() {
+function changeFridayText(theFridays) {
 
     let fridayButton = document.getElementById('btn-friday');
     let fridays = document.querySelectorAll('.friday');
@@ -97,12 +97,13 @@ function changeFridayText() {
             if (fridays[index].innerText != 'Sexta-feira') {
                 fridays[index].innerText = 'Sexta-feira';
             } else {
-                fridays[index].innerText = dezDaysList[index];
+                fridays[index].innerText = theFridays[index];
             }
         }
     })
 }
-changeFridayText();
+let theFridays = [ 4, 11, 18, 25 ];
+changeFridayText(theFridays);
 
 /* Exercício 6 */
 function mouseOver() {
@@ -125,10 +126,15 @@ mouseOver();
 mouseOut();
 
 /* Exercício 7 */
-function addTask(string) {
+function addTask(task) {
     let myTasks = document.querySelector('.my-tasks');
     let tarefa = document.createElement('span');
-    tarefa.innerHTML = string;
+    tarefa.innerHTML = task;
     myTasks.appendChild(tarefa);
 }
 addTask('cozinhar');
+
+/* Exercício 8 */
+function addsSubtitle(cor) {
+
+}
