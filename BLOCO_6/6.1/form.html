@@ -3,11 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <header>
+        <h1 id="title">CV Form</h1>
+    </header>
+    <main>
+        <fieldset id="personal-data">
+            <h1 class="field-set-title">Seus dados</h1>
+            <form action="" class="my-form">
+                <div class="form-row">
+                    <label for="input-name">Nome</label>
+                    <input type="text" name="name" value="" id="input-name" maxlength="40" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="input-email">E-mail</label>
+                    <input type="email" name="email" value="" id="input-email" maxlength="50" required placeholder="example@email.com">
+                </div>
+    
+                <div class="form-row">
+                    <label for="input-cpf">CPF</label>
+                    <input type="text" name="cpf" value="" id="input-cpf" maxlength="11" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="input-address">Endereço</label>
+                    <input type="text" name="address" value="" id="input-address" maxlength="200" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="input-city">Cidade</label>
+                    <input type="text" name="city" value="" id="input-city" maxlength="28" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="dropdown-states">Estado</label> <!-- Lista de todos estados brasileiros com js -->
+                    <select name="state" id="dropdown-states">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </form>
+        </fieldset>
+
+        <fieldset id="last-job-data">
+            <h1 class="field-set-title">Dados do seu último emprego</h1>
+            <form action="" class="my-form">
+                <div class="form-row">
+                    <label for="input-summary">Resumo do currículo</label>
+                    <textarea name="cv-summary" id="input-summary" cols="50" rows="10" maxlength="1000" required style="resize: none; border: 1px solid black;"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="input-position">Cargo</label>
+                    <input type="text" name="office/position" value="" id="input-position" maxlength="40" required>
+                </div>
+    
+                <div class="form-row">
+                    <label for="input-position-description">Descrição do cargo</label>
+                    <input type="text" name="position-description" value="" id="input-position-description" maxlength="500" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="input-date">Data de início</label>
+                    <input type="date" name="date" value="" id="input-date" required>  <!-- VERIFICAR DATA -->
+                </div>
+            </form>
+        </fieldset>
+        <section class="button-container">
+            <button>Enviar</button>
+            <button>Limpar</button>
+        </section>
+
+    </main>
+
+
 
     <script src="/script.js"></script>
 </body>

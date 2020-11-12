@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    padding: 0;
+}
+
+header, main, t {
+    background-color: rgb(15, 163, 107);
+    border: 1px solid black;
+    padding: 3rem;
+    margin: 3rem 20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgb(245, 245, 245);
+    margin: 1rem;
+}
+
+.field-set-title {
+    margin: 3rem 0 0 0;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.my-form {
+    padding: 3rem;
+
+}
+
+.form-row {
+
+    margin: 1rem 0 0 0;
+
+}
+
+label {
+    display: block;
+    font-size: 20px;
+}
+
+input, textarea {
+    background-color: white;
+    padding: 5px;
+    font-size: large;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    width: 20%;
+    height: 30%;
+    margin: 1.5rem 1rem;
+    padding: 10px;
+    font-size: larger;
+}
