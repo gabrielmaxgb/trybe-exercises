@@ -1,0 +1,58 @@
+body {
+    margin: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: larger;
+}
+
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin: 1.5rem 1rem;
+}
+
+figure {
+    margin: 0;
+}
+
+main {
+    margin: 0 2rem;
+}
+
+
+.text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.figures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 700px){
+
+    .figures {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    body {
+        background-color: antiquewhite;
+        max-width: 60%;
+    }
+
+}
