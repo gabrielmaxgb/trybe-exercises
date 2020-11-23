@@ -1,19 +1,12 @@
-const findXAndReplace = (string) => {
+const findXAndReplace = (string) => `Tryber ${string} aqui!`;
 
-    let replace = 'Printar: x';
+const fiveSkills = ['GitHub', 'JS', 'CSS', 'jQuery', 'Bootstrap'];
 
-    replace.split(' ').forEach(element => {
-        for (let index = 0; index < element.length; index += 1) {
-            if (element[index] === 'x') {
-                element[index] = string;
-            }
-        }
-        return replace;
-    })
-};
-findXAndReplace('eu aqui');
-
-
-let replace = 'Printar: x';
-replace.split(' ').forEach((element) => console.log(element.length));
-console.log(replace.split(' '));
+const concatenate = (stringReturned) => `${stringReturned}
+                                        Minhas 5 habilidades:
+                                        ${fiveSkills[0]}
+                                        ${fiveSkills[1]}
+                                        ${fiveSkills[2]}
+                                        ${fiveSkills[3]}
+                                        ${fiveSkills[4]}`;
+console.log(concatenate(findXAndReplace()));
