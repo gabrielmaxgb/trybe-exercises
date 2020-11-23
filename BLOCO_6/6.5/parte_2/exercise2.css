@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+header p {
+  font-size: 5vh;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 1rem;
+
+}
+
+.all-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color: burlywood;
+}
+
+.aside-one {
+  order: 0;
+  max-width: 15%;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.aside-one ul li {
+  margin: 15px 0;
+}
+
+.aside-two {
+  order: 2;
+  max-width: 15%;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.aside-two h2 {
+  text-align: center;
+}
+
+.aside-two ul li {
+  margin: 15px 0;
+}
+
+.main-content {
+  order: 1;
+  max-width: fit-content;
+  width: 60%;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 1.4rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+footer p {
+  max-width: 70%;
+}
