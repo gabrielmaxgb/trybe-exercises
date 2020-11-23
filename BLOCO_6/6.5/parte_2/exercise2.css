@@ -95,3 +95,29 @@ footer {
 footer p {
   max-width: 70%;
 }
+
+@media screen and (max-width: 1500px) {
+
+  .all-content {
+    display: flex;
+  }
+
+  .aside-one {
+    order: 0;
+    max-width: 50%;
+    width: auto;
+    align-self: center;
+    text-align: center;
+  }
+
+  .aside-two {
+    order: 1;
+    max-width: 50%;
+    text-align: center;
+    width: auto;
+  }
+
+  .main-content {
+  }
+
+}
