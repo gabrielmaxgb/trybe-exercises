@@ -70,7 +70,7 @@ function smallerName() {
   // escreva aqui o seu código
 
     books.forEach(book => {
-        if(!nameBook || book.name.length < nameBook.length) {
+        if(nameBook === undefined || book.name.length < nameBook.length) {
             nameBook = book.name;
         }
     });
