@@ -63,40 +63,16 @@ const books = [
   },
 ];
 
-const expected_result = [
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-    releaseYear: 1928
-  },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: { name: 'Isaac Asimov', birthYear: 1920 },
-    releaseYear: 1951
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
-    releaseYear: 1954
-  }
-]
+// Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais (terminam com um ponto).
 
-// Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+const expected_result = 'O Senhor dos Anéis';
 
-function oldBooks() {
+function authorWith3DotsOnName() {
   // escreva seu código aqui
-  const currentYear = new Date().getFullYear();
-  return books.filter(book => {
-      return book.releaseYear < currentYear - 60
-  }).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
 
+  return books.find(book => (
+    book.author.name.split(' ').filter(word => word.endsWith('.')).length === 3
+  )).name;
 }
 
-
-assert.deepEqual(oldBooks(), expected_result);
+assert.deepEqual(authorWith3DotsOnName(), expected_result);
