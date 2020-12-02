@@ -11,6 +11,7 @@ const names = [
 
 function containsA() {
   // escreva seu código aqui
+  return names.reduce((prev, actual) => prev.concat(actual)).split('').reduce((acc, element) => (element === 'A' || element === 'a') ? acc + 1 : acc, 0);
 }
 
 assert.deepEqual(containsA(), 20);
