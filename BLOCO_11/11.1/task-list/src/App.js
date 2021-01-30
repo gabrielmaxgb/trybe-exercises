@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -8,11 +7,17 @@ const task = (value) => {
   );
 }
 
+const tasksArray = ['Estudar', 'trabalhar', 'lala', 'teste'];
+
+function listTasks () {
+  return tasksArray.map(element => task(element));
+}
+
 function App() {
   return (
-    <div>
-      { task('oi') }
-    </div>
+    <ul>
+      { listTasks() }
+    </ul>
   );
 }
 
